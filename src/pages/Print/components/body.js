@@ -20,12 +20,18 @@ const Body = ({ data }) => {
         text: "",
       },
     },
-
-    plotOptions: {
-      series: {
-        pointStart: data?.data ? data?.data[0]?.data_year : 0,
-      },
+    xAxis: {
+      categories: data?.data
+        ? data?.data.map((crime) => {
+            return crime?.data_year;
+          })
+        : [],
     },
+    // plotOptions: {
+    //   series: {
+    //     pointStart: data?.data ? data?.data[0]?.data_year : 0,
+    //   },
+    // },
 
     series: [
       {

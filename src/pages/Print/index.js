@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     // Define the API URL
     const apiUrl =
-      "https://api.usa.gov/crime/fbi/cde/arrest/state/AK/all?from=2012&to=2022&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv"; // Replace with your API endpoint
+      "https://api.usa.gov/crime/fbi/cde/arrest/state/AK/all?from=2015&to=2020&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv"; // Replace with your API endpoint
 
     // Use the fetch API to make a GET request
     fetch(apiUrl)
